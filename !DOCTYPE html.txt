@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Artes - Alice</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #6a11cb, #2575fc);
+            color: #fff;
+        }
+        header {
+            background: #4b0082;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        .container {
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .gallery-item {
+            background: #fff;
+            color: #4b0082;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery-item h3 {
+            margin: 15px 0;
+        }
+        .gallery-item p {
+            color: #555;
+            font-size: 14px;
+            padding: 0 10px;
+        }
+        .gallery-item a {
+            display: block;
+            background: #2575fc;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 0;
+            margin: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .gallery-item a:hover {
+            background: #6a11cb;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #4b0082;
+            color: #fff;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loja de Artes da Alice</h1>
+        <p>Obras exclusivas e cheias de inspiração para o seu lar.</p>
+    </header>
+
+    <div class="container">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="arte1.jpg" alt="Arte 1">
+                <h3>Arte Celestial</h3>
+                <p>Uma obra única que traz serenidade e inspiração.</p>
+                <a href="#">Comprar Agora</a>
+            </div>
+
+            <div class="gallery-item">
+                <img src="arte2.jpg" alt="Arte 2">
+                <h3>Paisagem dos Sonhos</h3>
+                <p>Descubra a harmonia das cores em cada detalhe.</p>
+                <a href="#">Comprar Agora</a>
+            </div>
+
+            <div class="gallery-item">
+                <img src="arte3.jpg" alt="Arte 3">
+                <h3>Explosão de Cores</h3>
+                <p>Uma celebração vibrante de criatividade.</p>
+                <a href="#">Comprar Agora</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Loja de Artes da Alice. Transformando emoções em arte.</p>
+    </footer>
+</body>
+</html>
